@@ -23,3 +23,7 @@ aside {
 article, aside {
     overflow-y: auto;
 }
+
+img.body-img {
+    border-radius: 25px;
+}
