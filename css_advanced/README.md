@@ -1,4 +1,4 @@
-## Welcome to Smile School!
+## Welcome to SmileSchool 😀!
 
 This is the code repository for Smile School, a website dedicated to helping you master the art of smiling. 
 
@@ -21,7 +21,6 @@ This project utilizes advanced HTML and CSS functionalities to create an engagin
 
 * HTML5
 * CSS3
-* Font Awesome ([https://fontawesome.com/](https://fontawesome.com/))
 
 **Image Placeholders:**
 
