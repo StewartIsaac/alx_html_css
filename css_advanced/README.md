@@ -14,8 +14,7 @@ This project utilizes advanced HTML and CSS functionalities to create an engagin
 **Getting Started:**
 
 1. Clone this repository.
-2. Install any necessary dependencies (e.g., Font Awesome).
-3. Open the `index.html` file in your web browser.
+2. Open the `index.html` file in your web browser.
 
 **Built with:**
 
