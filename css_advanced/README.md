@@ -1,4 +1,4 @@
-###Welcome to Smile School!###
+****Welcome to Smile School!****
 
 This is the code repository for Smile School, a website dedicated to helping you master the art of smiling. 
 
