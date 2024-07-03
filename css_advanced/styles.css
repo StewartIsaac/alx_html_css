@@ -202,3 +202,61 @@ body {
     font-style: italic;
 }
 
+#tutorials-section {
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+#tutorials-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+#tutorials-section h2 span {
+    font-weight: bold;
+}
+  
+  #tutorials-section .tutorial-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 255px;
+    height: 335px;
+  }
+
+  #tutorials-section .tutorial-card img:first-child {
+    width: 100%;
+  }
+  
+  #tutorials-section .tutorial-card h3 {
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+
+  
+  
+  #tutorials-section .tutorial-card p {
+    font-size: 14px;
+    color: var(--primary-color);
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  #tutorials-section .tutorial-card .rating {
+    display: flex; /* Makes the stars display inline */
+  }
+  
+  #tutorials-section .tutorial-card .rating i {
+    color: #f1c232; /* Sets the color of the stars */
+    font-size: 1.2em; /* Sets the size of the stars */
+    margin-right: 5px; /* Adds space between stars */
+  }
+  
+  #tutorials-section .tutorial-card .time {
+    font-size: 0.8em; /* Sets the font size of the time */
+    margin-left: 10px; /* Adds margin to the left of the time */
+  }
+  
