@@ -1,15 +1,16 @@
 @import url("https://use.typekit.net/hou6asi.css");
 
-* {
+*,
+*::after,
+*::before {
     --primary-color: #071629;
     --accent-color: #979797;
     --secondary-color: #C271FF;
+    --font: "source-sans-pro", sans-serif;
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "source-sans-pro", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 header {
@@ -22,7 +23,10 @@ header {
 body {
     background-image: url('./assets/hero-image.png');
     background-repeat: no-repeat;
-    display: block;
+    object-fit: cover;
+    font-family: var(--font);
+    font-weight: 400;
+    font-style: normal;
 }
 
 .navbar {
@@ -129,16 +133,16 @@ body {
     font-style: normal;
 }
 
-#pros-container h2 > span, 
-#tutorials-section h2 > span,
-#membership-section h2 > span {
+#pros-container h2>span,
+#tutorials-section h2>span,
+#membership-section h2>span {
     color: #C271FF;
     font-family: 'source-sans-pro', sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-#pros-container h2, 
+#pros-container h2,
 #membership-section h2 {
     color: #ffffff;
     font-family: 'source-sans-pro', sans-serif;
@@ -190,7 +194,8 @@ body {
     font-size: 22px;
 }
 
-.quote-div p, blockquote {
+.quote-div p,
+blockquote {
     color: #ffffff;
     font-family: 'source-sans-pro', sans-serif;
     font-weight: 300;
@@ -203,60 +208,234 @@ body {
 }
 
 #tutorials-section {
-    margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 100px;
 }
-  
+
 #tutorials-section h2 {
     text-align: center;
     margin-bottom: 20px;
 }
-  
+
 #tutorials-section h2 span {
     font-weight: bold;
 }
-  
-  #tutorials-section .tutorial-card {
+
+.tutorial-card {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
     align-items: center;
     width: 255px;
     height: 335px;
-  }
+    justify-content: space-around;
 
-  #tutorials-section .tutorial-card img:first-child {
-    width: 100%;
-  }
-  
-  #tutorials-section .tutorial-card h3 {
-    font-size: 16px;
-    color: var(--primary-color);
-    margin-bottom: 5px;
-    font-weight: 700;
-  }
+}
 
-  
-  
-  #tutorials-section .tutorial-card p {
+.tutorial-cards-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.author-img {
+    width: 30px;
+}
+
+.ratings img {
+    height: 15px;
+    width: 107px;
+}
+
+.time {
+    color: var(--secondary-color);
+    font-family: var(--font);
+    font-weight: 600;
+}
+
+.info-text {
+    color: #979797;
+    text-align: left;
     font-size: 14px;
+}
+
+section.videos_list {
+    padding-block: 87px;
+    text-align: center;
+    min-height: 624px;
+}
+
+section.videos_list h2 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #071629;
+    margin-bottom: 87px;
+}
+
+.video_cards_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.videos_list .video_card {
+    margin-right: 5px;
+    width: 255px;
+    height: 335px;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 0px;
+    text-align: left;
+    position: relative;
+}
+
+section.videos_list>div:last-child {
+    margin-right: 0;
+}
+
+section.videos_list .video_card>img {
+    width: calc(100% + 20px);
+    height: 154px;
+    margin-left: -10px;
+}
+
+section.videos_list .video_card>#playBTN {
+    background: url('./assets/play.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 45px;
+    transform: translateX(-50%);
+}
+
+section.videos_list .video_card h3 {
+    font-size: 16px;
+    font-weight: 700;
     color: var(--primary-color);
-    line-height: 1.5;
+    margin-block: 8px;
+}
+
+section.videos_list .video_card>p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+section.videos_list .video_card>div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 5px 0 10px;
+    width: max-content;
+}
+
+section.videos_list .video_card>div:not(.stars) {
+    margin-block: 10px;
+}
+
+section.videos_list .video_card div img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+section.videos_list .video_card div h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #C271FF;
+}
+
+section.videos_list .video_card div div {
+    width: max-content;
+}
+
+section.videos_list .video_card div div i {
+    font-size: 14px;
+    color: #C271FF;
+}
+
+section.videos_list .video_card div div:last-child i {
+    color: #979797;
+}
+
+section.videos_list .video_card>p:last-child {
+    font-size: 14px;
+    font-weight: 600;
+    color: #C271FF;
+    display: inline-block;
+    width: max-content;
+    float: right;
+    margin: 5px 0 10px;
+}
+
+
+
+/* --------------------------Membership section -------------------- */
+
+#membership-section {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.membership-div h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+.membership-div h2 span {
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.membership-div h3 {
+    text-align: center;
     margin-bottom: 10px;
-  }
-  
-  #tutorials-section .tutorial-card .rating {
-    display: flex; /* Makes the stars display inline */
-  }
-  
-  #tutorials-section .tutorial-card .rating i {
-    color: #f1c232; /* Sets the color of the stars */
-    font-size: 1.2em; /* Sets the size of the stars */
-    margin-right: 5px; /* Adds space between stars */
-  }
-  
-  #tutorials-section .tutorial-card .time {
-    font-size: 0.8em; /* Sets the font size of the time */
-    margin-left: 10px; /* Adds margin to the left of the time */
-  }
-  
+    font-size: 18px;
+}
+
+.membership-div p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.membership-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.membership-cards {
+    margin: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.membership-cards img {
+    margin-bottom: 20px;
+}
