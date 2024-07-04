@@ -276,6 +276,11 @@ section.videos_list h2 {
     margin-bottom: 87px;
 }
 
+section.video_list h2 span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 .video_cards_container {
     display: flex;
     align-items: center;
@@ -369,7 +374,7 @@ section.videos_list .video_card div div:last-child i {
     color: #979797;
 }
 
-section.videos_list .video_card>p:last-child {
+section.videos_list .video_card > p:last-child {
     font-size: 14px;
     font-weight: 600;
     color: #C271FF;
@@ -379,9 +384,6 @@ section.videos_list .video_card>p:last-child {
     margin: 5px 0 10px;
 }
 
-
-
-/* --------------------------Membership section -------------------- */
 
 #membership-section {
     background-color: var(--primary-color);
@@ -438,4 +440,41 @@ section.videos_list .video_card>p:last-child {
 
 .membership-cards img {
     margin-bottom: 20px;
+}
+
+.FAQ {
+    padding-block:64px 84px ;
+}
+.FAQ h2{
+    font-size: 60px;
+    font-weight: 300;
+    color: #071629;
+    margin-bottom: 74px;
+    text-align: center;
+}
+.FAQ_cards_container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 74px 220px;
+}
+.FAQ_cards_container .FAQ_card{
+    width: calc(50% - 220px);
+    min-width: 350px;
+}
+.FAQ_cards_container .FAQ_card h3{
+    font-size: 16px;
+    font-weight: 700;
+    color: #071629;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 350px;
+}
+.FAQ_cards_container .FAQ_card > div:last-child{
+    font-size: 14px;
+    font-weight: 500;
+    color: #0716297c;
+    width: 350px;
+    margin: auto;
 }
