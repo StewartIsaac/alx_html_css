@@ -1,4 +1,5 @@
 ## Welcome to SmileSchool 😀!
+![alt text](https://giphy.com/clips/SWAG-FJz4Xlfq3tWPzkqLBH)
 
 This is the code repository for Smile School, a website dedicated to helping you master the art of smiling. 
 
