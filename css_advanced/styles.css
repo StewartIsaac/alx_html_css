@@ -457,7 +457,7 @@ footer section {
     margin: auto;
 }
 
-footer section>div {
+footer section > div {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -465,14 +465,14 @@ footer section>div {
     height: 100%;
 }
 
-footer section>div>div {
+footer section > div > div {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 20px;
 }
 
-footer section>div>div i {
+footer section>div > div i {
     width: 30px;
     height: 30px;
     border-radius: 50%;
