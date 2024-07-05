@@ -207,66 +207,12 @@ blockquote {
     font-style: italic;
 }
 
-#tutorials-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 100px;
-}
-
-#tutorials-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#tutorials-section h2 span {
-    font-weight: bold;
-}
-
-.tutorial-card {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    align-items: center;
-    width: 255px;
-    height: 335px;
-    justify-content: space-around;
-
-}
-
-.tutorial-cards-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-}
-
-.author-img {
-    width: 30px;
-}
-
-.ratings img {
-    height: 15px;
-    width: 107px;
-}
-
-.time {
-    color: var(--secondary-color);
-    font-family: var(--font);
-    font-weight: 600;
-}
-
-.info-text {
-    color: #979797;
-    text-align: left;
-    font-size: 14px;
-}
-
 section.videos_list {
     padding-block: 87px;
     text-align: center;
     min-height: 624px;
+    max-width: 1112px;
+    margin: auto;
 }
 
 section.videos_list h2 {
@@ -339,10 +285,9 @@ section.videos_list .video_card>p {
 section.videos_list .video_card>div {
     display: inline-flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: right;
     gap: 10px;
     margin: 5px 0 10px;
-    width: max-content;
 }
 
 section.videos_list .video_card>div:not(.stars) {
@@ -442,28 +387,30 @@ section.videos_list .video_card > p:last-child {
     margin-bottom: 20px;
 }
 
-.FAQ {
+section.FAQ{
     padding-block:64px 84px ;
+    max-width: 930px;
+    margin: auto;
 }
-.FAQ h2{
+section.FAQ h2{
     font-size: 60px;
     font-weight: 300;
     color: #071629;
     margin-bottom: 74px;
     text-align: center;
 }
-.FAQ_cards_container{
+section.FAQ .FAQ_cards_container{
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 74px 220px;
 }
-.FAQ_cards_container .FAQ_card{
+section.FAQ .FAQ_cards_container .FAQ_card{
     width: calc(50% - 220px);
     min-width: 350px;
 }
-.FAQ_cards_container .FAQ_card h3{
+section.FAQ .FAQ_cards_container .FAQ_card h3{
     font-size: 16px;
     font-weight: 700;
     color: #071629;
@@ -471,10 +418,63 @@ section.videos_list .video_card > p:last-child {
     margin-bottom: 30px;
     width: 350px;
 }
-.FAQ_cards_container .FAQ_card > div:last-child{
+section.FAQ .FAQ_cards_container .FAQ_card > div:last-child{
     font-size: 14px;
     font-weight: 500;
     color: #0716297c;
     width: 350px;
     margin: auto;
+}
+
+footer{
+    background-color: #071629;
+    padding-block: 95px 39px;
+    height: 249px;
+}
+
+footer section{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    max-width: 1060px;
+    margin: auto;
+}
+
+footer section > div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+footer section > div > div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+footer section > div > div i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #071629;
+    font-size: 14px;
+    text-align: center;
+    padding: 8px;
+}
+
+footer section > div > div i:first-child {
+    margin-left: auto;
+}
+
+footer section > p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
 }
