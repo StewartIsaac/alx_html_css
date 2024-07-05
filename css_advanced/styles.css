@@ -207,7 +207,7 @@ blockquote {
     font-style: italic;
 }
 
-section.videos_list {
+.videos_list {
     padding-block: 87px;
     text-align: center;
     min-height: 624px;
@@ -215,15 +215,15 @@ section.videos_list {
     margin: auto;
 }
 
-section.videos_list h2 {
+.videos_list h2 {
     font-size: 32px;
     font-weight: 300;
     color: #071629;
     margin-bottom: 87px;
 }
 
-section.video_list h2 span {
-    color: var(--primary-color);
+.videos_list h2 span {
+    color: var( --secondary-color);
     font-weight: 600;
 }
 
@@ -233,7 +233,7 @@ section.video_list h2 span {
     justify-content: space-around;
 }
 
-section.videos_list .video_card {
+.videos_list .video_card {
     margin-right: 5px;
     width: 255px;
     height: 335px;
@@ -247,22 +247,22 @@ section.videos_list .video_card {
     justify-content: center;
 }
 
-section.videos_list .video_card:not(#playBTN, .video_list_video) {
+.videos_list .video_card:not(#playBTN, .video_list_video) {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-section.videos_list>div:last-child {
+.videos_list > div:last-child {
     margin-right: 0;
 }
 
-section.videos_list .video_card>img {
+.videos_list .video_card>img {
     width: calc(100% + 20px);
     height: 154px;
     margin-left: -10px;
 }
 
-section.videos_list .video_card>#playBTN {
+.videos_list .video_card > #playBTN {
     background: url('./assets/play.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -277,20 +277,20 @@ section.videos_list .video_card>#playBTN {
     transform: translateX(-50%);
 }
 
-section.videos_list .video_card h3 {
+.videos_list .video_card h3 {
     font-size: 16px;
     font-weight: 700;
     color: var(--primary-color);
     margin-block: 8px;
 }
 
-section.videos_list .video_card>p {
+.videos_list .video_card>p {
     font-size: 14px;
     font-weight: 400;
     color: var(--primary-color);
 }
 
-section.videos_list .video_card>div {
+.videos_list .video_card>div {
     display: inline-flex;
     align-items: center;
     justify-content: right;
@@ -298,37 +298,37 @@ section.videos_list .video_card>div {
     margin: 5px 0 10px;
 }
 
-section.videos_list .video_card>div:not(.stars) {
+.videos_list .video_card>div:not(.stars) {
     margin-block: 10px;
 }
 
-section.videos_list .video_card div img {
+.videos_list .video_card div img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
 
-section.videos_list .video_card div h4 {
+.videos_list .video_card div h4 {
     font-size: 14px;
     font-weight: 600;
     color: #C271FF;
     margin-right: 30px;
 }
 
-section.videos_list .video_card div div {
+.videos_list .video_card div div {
     width: max-content;
 }
 
-section.videos_list .video_card div div i {
+.videos_list .video_card div div i {
     font-size: 12px;
     color: #C271FF;
 }
 
-section.videos_list .video_card div div:last-child i {
+.videos_list .video_card div div:last-child i {
     color: #979797;
 }
 
-section.videos_list .video_card > p:last-child {
+.videos_list .video_card>p:last-child {
     font-size: 14px;
     font-weight: 600;
     color: #C271FF;
@@ -396,30 +396,34 @@ section.videos_list .video_card > p:last-child {
     margin-bottom: 20px;
 }
 
-section.FAQ{
-    padding-block:64px 84px ;
+section.FAQ {
+    padding-block: 64px 84px;
     max-width: 930px;
     margin: auto;
 }
-section.FAQ h2{
+
+section.FAQ h2 {
     font-size: 60px;
     font-weight: 300;
     color: #071629;
     margin-bottom: 74px;
     text-align: center;
 }
-section.FAQ .FAQ_cards_container{
+
+section.FAQ .FAQ_cards_container {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 74px 220px;
 }
-section.FAQ .FAQ_cards_container .FAQ_card{
+
+section.FAQ .FAQ_cards_container .FAQ_card {
     width: calc(50% - 220px);
     min-width: 350px;
 }
-section.FAQ .FAQ_cards_container .FAQ_card h3{
+
+section.FAQ .FAQ_cards_container .FAQ_card h3 {
     font-size: 16px;
     font-weight: 700;
     color: #071629;
@@ -427,7 +431,8 @@ section.FAQ .FAQ_cards_container .FAQ_card h3{
     margin-bottom: 30px;
     width: 350px;
 }
-section.FAQ .FAQ_cards_container .FAQ_card > div:last-child{
+
+section.FAQ .FAQ_cards_container .FAQ_card>div:last-child {
     font-size: 14px;
     font-weight: 500;
     color: #0716297c;
@@ -435,13 +440,13 @@ section.FAQ .FAQ_cards_container .FAQ_card > div:last-child{
     margin: auto;
 }
 
-footer{
+footer {
     background-color: #071629;
     padding-block: 95px 39px;
     height: 249px;
 }
 
-footer section{
+footer section {
     color: #fff;
     display: flex;
     align-items: center;
@@ -452,7 +457,7 @@ footer section{
     margin: auto;
 }
 
-footer section > div{
+footer section>div {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -460,14 +465,14 @@ footer section > div{
     height: 100%;
 }
 
-footer section > div > div{
+footer section>div>div {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 20px;
 }
 
-footer section > div > div i{
+footer section>div>div i {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -478,11 +483,11 @@ footer section > div > div i{
     padding: 8px;
 }
 
-footer section > div > div i:first-child {
+footer section>div>div i:first-child {
     margin-left: auto;
 }
 
-footer section > p{
+footer section>p {
     color: #fff;
     font-size: 12px;
     font-weight: 400;
