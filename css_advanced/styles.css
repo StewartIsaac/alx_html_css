@@ -218,7 +218,7 @@ blockquote {
 .videos_list h2 {
     font-size: 32px;
     font-weight: 300;
-    color: #071629;
+    color: var(--primary-color);
     margin-bottom: 87px;
 }
 
