@@ -242,14 +242,14 @@ blockquote {
     padding: 0px;
     text-align: left;
     position: relative;
-    border: 2px;
-    box-shadow: 0 1px 1px rgba(238, 238, 238, 0.98);
+    /* border: 2px; */
+    /* box-shadow: 0 1px 1px rgba(245, 244, 244, 0.99); */
     justify-content: center;
 }
 
 .videos_list .video_card:not(#playBTN, .video_list_video) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .videos_list > div:last-child {
