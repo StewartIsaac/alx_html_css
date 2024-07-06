@@ -1,3 +1,16 @@
---link-hover: #ff6565;
---button-hover: 0.9;
+@import url("https://use.typekit.net/hou6asi.css");
+
+* {
+    --link-hover: #FF6565;
+    --button-hover: 0.9;
+    --pri-color: #071629;
+    --sec-color: #FF6565;
+}
+
+body {
+    font-family: 'source-sans-pro', sans-serif;
+    color: var(--primary-color);
+}
+
+
 
