@@ -1,4 +1,4 @@
-## Welcome to Headphones: A Symphony of Design and Code
+## Welcome to Headphones
 
 ![Image of Headphones](images/headphones_hero_1.jpg)
 
